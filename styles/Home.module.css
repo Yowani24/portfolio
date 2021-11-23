@@ -10,9 +10,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   position: relative;
 }
-
+.sidecomp_box{
+  z-index: 1000;
+  min-width: 300px;
+  background: green;
+}
 /*---------------------------------------*/
 .mobile_menu_box{
   display: none;
@@ -23,7 +28,8 @@
 }
 .topSide_left{
   padding: 20px;
-  margin-left: 40px;
+  background: green;
+  width: 50%;
 }
 .userName{
   font-size: 35px;
@@ -36,9 +42,16 @@
   font-size: 14px;
   margin-top: 20px;
   width: 400px;
+  background: red;
 }
 .btns_box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 60px;
+  background: red;
+  width: fit-content;
 }
 .portfolio_btn{
   background-color: rgb(112, 48, 160);
@@ -70,14 +83,18 @@
 .resume_btn:active{
   border-color: rgb(221, 197, 238);
 }
+
+
 .topSide_right{
   width: 50%;
-  margin:auto 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: chartreuse;
 }
 .webdevIma{
   margin-right: 20px;
 }
-
 .bottomSide{
   padding: 10px 90px;
 }
@@ -98,8 +115,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0 auto;
   margin-top: 60px;
-  width: 600px;
+  width: 70%;
+  background: chocolate;
 }
 .technologies p:first-child{
   color: rgb(112, 48, 160);
@@ -110,6 +129,7 @@
   color: rgb(100, 98, 98);
   display: flex;
   flex-direction: column;
+  height: 56px;
 
 }
 .technologies p:hover{
@@ -140,6 +160,34 @@
   display: none;
 }
 
+/*-------------FORM-------------------*/
+
+.form_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: red;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 40%;
+}
+.form_box input{
+  width: 100%;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  margin: 5px 0;
+  outline: none;
+  padding-left: 10px;
+}
+.form_box textarea{
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+
+}
 
 /*--------------------------------*/
 .profileBox{
@@ -303,5 +351,8 @@
     margin-top: 150px;
     border: 3.5px solid azure;
     
+  }
+  .form_box{
+    width: 100%;
   }
 }
