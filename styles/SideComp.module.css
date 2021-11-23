@@ -1,14 +1,15 @@
 .sideComp{
     background-color: rgb(112, 48, 160);
-    width: 300px;
+    width: 400px;
     height: 100vh;
     padding: 10px 40px;
     position: fixed;
+    z-index: 100;
 }
 .profileName{
     color: azure;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 20%;
     text-align: center;
 }
 .profileBox{
@@ -19,8 +20,8 @@
 }
 .profileImageBox{
     background-color: azure;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 100%;
     margin: 20px auto;
     overflow: hidden;
@@ -39,7 +40,7 @@
     position: absolute;
     bottom: 0%;
     left: 62%;
-    margin-top: 150px;
+    margin-top: 155px;
     border: 3.5px solid azure;
     
 }
@@ -48,7 +49,7 @@
     width: 100%;
     height: 1px;
     background-color: azure;
-    margin: 15px auto;
+    margin: 20% auto;
 }
 
 .menu ul{
@@ -77,18 +78,19 @@
 }
 .menu a{
     color: azure;
+    font-size: 20px;
 }
 .btn_box{
     display: flex;
     justify-content: center;
-    margin: 30px auto;
+    margin: 20% auto;
     
 }
 .hire_me_btn{
     background-color: rgb(72, 31, 103);
     border: none;
-    padding: 6px 25px;
-    font-size: 16px;
+    padding: 10px 50px;
+    font-size: 18px;
     border-radius: 5px;
     color: azure;
     cursor: pointer;
@@ -102,6 +104,7 @@
     margin: 20px auto;
     text-align: center;
     color: azure;
+    font-size: 18px;
 }
 .icons{
     padding: 0 20px;
@@ -109,8 +112,8 @@
     justify-content: space-between;
 }
 .icon_box{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-color: azure;
     border-radius: 100%;
     display: flex;

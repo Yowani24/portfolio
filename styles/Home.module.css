@@ -2,21 +2,24 @@
 .interface{
   display: flex;
 }
+
 .topSide{
   width: 100%;
   height: auto;
   background-color: rgb(247,247,247);
-  padding: 20px 30px;
+  padding: 40px 70px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   position: relative;
 }
 .sidecomp_box{
-  z-index: 1000;
-  min-width: 300px;
-  background: green;
+  min-width: 400px;
+}
+.wrapper{
+  width: 100%;
+  padding-bottom: 100px;
 }
 /*---------------------------------------*/
 .mobile_menu_box{
@@ -28,21 +31,21 @@
 }
 .topSide_left{
   padding: 20px;
-  background: green;
   width: 50%;
 }
 .userName{
-  font-size: 35px;
-  color: rgb(100, 98, 98);
+  font-size: 40px;
+  color: rgb(87, 85, 85);
+  font-weight: bold;
 }
 .office{
-  font-size: 20px;
+  font-size: 30px;
+  color: rgb(100, 98, 98);
 }
 .details{
-  font-size: 14px;
-  margin-top: 20px;
-  width: 400px;
-  background: red;
+  font-size: 20px;
+  margin-top: 40px;
+  width: 100%;
 }
 .btns_box{
   display: flex;
@@ -50,14 +53,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-  background: red;
   width: fit-content;
 }
 .portfolio_btn{
   background-color: rgb(112, 48, 160);
   border: none;
-  padding: 7px 25px;
-  font-size: 13px;
+  padding: 10px 25px;
+  font-size: 16px;
   border-radius: 5px;
   color: azure;
   cursor: pointer;
@@ -71,8 +73,8 @@
 .resume_btn{
   background: transparent;
   border: 1px solid rgb(112, 48, 160);
-  padding: 7px 25px;
-  font-size: 13px;
+  padding: 8px 25px;
+  font-size: 16px;
   border-radius: 5px;
   color: #000;
   cursor: pointer;
@@ -90,7 +92,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: chartreuse;
 }
 .webdevIma{
   margin-right: 20px;
@@ -102,11 +103,12 @@
   font-size: 25px;
   border-left: 6px solid rgb(112, 48, 160);
   padding-left: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .what_I_do_details{
   padding: 10px;
   margin-top: 20px;
+  font-size: 20px;
 }
 .what_I_do_details_last_word{
   color: indigo;
@@ -115,10 +117,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 auto;
   margin-top: 60px;
   width: 70%;
-  background: chocolate;
 }
 .technologies p:first-child{
   color: rgb(112, 48, 160);
@@ -159,6 +159,13 @@
 .arrowDown{
   display: none;
 }
+.requeste_service{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(100, 98, 98);
+  margin-top: 100px;
+
+}
 
 /*-------------FORM-------------------*/
 
@@ -166,14 +173,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: red;
   margin: 0 auto;
   margin-top: 40px;
   width: 40%;
 }
 .form_box input{
   width: 100%;
-  border: none;
+  border: 0.5px solid indigo;
   height: 35px;
   border-radius: 5px;
   margin: 5px 0;
@@ -186,8 +192,18 @@
   margin-top: 10px;
   outline: none;
   border-radius: 5px;
-
+  border: 0.5px solid indigo;
+  padding: 10px;
 }
+.submit_btn{
+  padding: 10px 40px;
+  background-color: rgb(112, 48, 160);
+  border: none;
+  color: azure;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 
 /*--------------------------------*/
 .profileBox{
@@ -205,7 +221,7 @@
   .topSide{
     flex-direction: column;
     width: auto;
-    padding: 20px 10px;
+    padding: 20px 2px;
   }
   .profile_image_and_name_box{
     display: flex;
@@ -240,29 +256,32 @@
   .btns_box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 20px;
     width: 100%;
   }
   .portfolio_btn{
     padding: 12px 25px;
+    font-size: 14px;
   }
   .resume_btn{
     padding: 10px;
-     margin-left: 30px;
+     font-size: 14px;
+
   }
   .office{
     text-align: center;
+    font-size: 25px;
   }
   .icons{
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 25px;
     margin-top: 50px;
 }
 .icon_box{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: azure;
   border-radius: 100%;
   display: flex;

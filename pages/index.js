@@ -26,7 +26,7 @@ export default function Home() {
         <div className={styles.sidecomp_box}>
           <SideComponent/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <div className={styles.topSide}>
             <div className={styles.mobile_menu_box}>
               <FiMenu className={styles.menuIcon}/>
@@ -92,10 +92,12 @@ export default function Home() {
               </div>
             </SmoothList>
             
+            <p className={styles.requeste_service}>Request a service</p>
             <form className={styles.form_box}>
               <input type="email" placeholder="Email" required/>
               <input type="text" placeholder="Company name" required/>
               <textarea placeholder="Tell me more about your interest"></textarea>
+              <button className={styles.submit_btn}>SUBMIT</button>
             </form>
 
           </div>
