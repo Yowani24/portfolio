@@ -293,6 +293,9 @@
    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
    cursor: pointer;
 }
+.what_I_do_details{
+  padding: 0;
+}
   .details{
     display: none;
   }
@@ -307,8 +310,8 @@
     margin-top: 35px;
   }
   .details_text{
-    display: flex;
-    font-size: 14px;
+    display: block;
+    font-size: 20px;
     margin-top: 20px;
     width: 100%;
   }
@@ -332,7 +335,7 @@
   .technologies{
     flex-wrap: wrap;
     width: 100%;
-    margin: 20px 0;
+    margin: 50px 0;
   }
   .technologies p{
     margin: 10px;
@@ -370,6 +373,9 @@
     margin-top: 150px;
     border: 3.5px solid azure;
     
+  }
+  .requeste_service{
+    margin-top: 0;
   }
   .form_box{
     width: 100%;
