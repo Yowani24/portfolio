@@ -10,21 +10,25 @@ import { PDFDownloadLink, Page, Text, View, Document, StyleSheet } from '@react-
 import { FiMenu } from 'react-icons/fi';
 import { IoIosArrowDown } from 'react-icons/io';
 import { FaLinkedinIn, FaInstagram, FaFacebookF, FaTwitter, FaUserCircle, FaUser } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
-const MyDoc = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Iso é apenas um este</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>It is just a test</Text>
-      </View>
-    </Page>
-  </Document>
-);
+// const MyDoc = () => (
+//   <Document>
+//     <Page size="A4" style={styles.page}>
+//       <View style={styles.section}>
+//         <Text>Iso é apenas um este</Text>
+//       </View>
+//       <View style={styles.section}>
+//         <Text>It is just a test</Text>
+//       </View>
+//     </Page>
+//   </Document>
+// );
+
+
 
 export default function Home() {
+ 
   return (
     <div className={styles.container}>
       <Head>
@@ -65,9 +69,10 @@ export default function Home() {
               <div className={styles.btns_box}>
                 <button className={styles.portfolio_btn}>Portfolio</button>
                 <button className={styles.resume_btn}>
-                  <PDFDownloadLink document={<MyDoc />} fileName="Joao_da_Costa.pdf">
+                  {/* <PDFDownloadLink document={<MyDoc />} fileName="Joao_da_Costa.pdf">
                     {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download Resume')}
-                  </PDFDownloadLink>
+                  </PDFDownloadLink> */}
+                  Download Resume
                 </button>
               </div>
 
