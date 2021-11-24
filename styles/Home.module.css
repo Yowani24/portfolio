@@ -231,6 +231,7 @@
   .userName{
     text-align: center;
     font-size: 30px;
+    margin-top: 20px;
   }
   .mobile_menu_box{
     display: flex;
@@ -256,8 +257,8 @@
   .btns_box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 40px;
     width: 100%;
   }
   .portfolio_btn{
@@ -271,12 +272,12 @@
   }
   .office{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
   }
   .icons{
     display: flex;
     justify-content: space-between;
-    padding: 0 25px;
+    padding: 0 40px;
     margin-top: 50px;
 }
 .icon_box{
@@ -295,6 +296,7 @@
 }
 .what_I_do_details{
   padding: 0;
+  font-size: 16px;
 }
   .details{
     display: none;
@@ -311,7 +313,7 @@
   }
   .details_text{
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
     width: 100%;
   }
@@ -339,7 +341,7 @@
   }
   .technologies p{
     margin: 10px;
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .profileBox{
